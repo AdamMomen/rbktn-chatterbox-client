@@ -88,8 +88,8 @@ describe('chatterbox', function() {
 
       App.initialize();
       MessagesView.renderMessage({
-        username: 'Mel Brooks',
-        text: 'I didn\'t get a harumph outa that guy.!',
+        username: 'Adam',
+        text: 'Hello World',
         roomname: 'lobby'
       });
       $('#chats').find('.username').trigger('click');
