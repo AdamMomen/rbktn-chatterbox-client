@@ -18,10 +18,9 @@ var App = {
   },
 
   fetch: function(callback = ()=>{}) {
-    debugger;
     Parse.readAll((data) => {
       // examine the response from the server request:
-      console.log(data.results[0].username);
+      console.log(data);
 
       callback();
     });
