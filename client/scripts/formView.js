@@ -17,13 +17,10 @@ var FormView = {
     text: val,
     roomname: 'lobby'
 });
-MessagesView.renderMessage();
+    MessagesView.renderMessage();
     // Stop the browser from submitting the form
     $('#message').val('');
     event.preventDefault();
-;
-    console.log('click!');
- 
 },
   setStatus: function(active) {
     var status = active ? 'true' : null;

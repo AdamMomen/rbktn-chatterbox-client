@@ -9,10 +9,12 @@ var MessagesView = {
   	var chat = "";
 	var chats = $('#chats');
   	Parse.readAll((data) => {
-		for(var i = 0; i<data.results.length; i++) {
+		for(var i = 0; i<4; i++) {
+      if(data.results[i].roomname === $( "#rooms option:selected" ).text()){
       		chat += MessageView.render((data.results[i]));
 			}
-		$(chats).append(chat);
+    }
+		$(MessagesView.$chats).html(chat);
     });
   }
 
